@@ -1,0 +1,27 @@
+### contacts index
+GET http://localhost:3000/contacts
+
+### contacts create
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "first_name": "Bob",
+  "last_name": "The Plumber",
+  "cell_number": "141-123-4567",
+  "email": "bob@example.com"
+}
+
+### contacts show
+GET http://localhost:3000/contacts/10
+
+### contacts update
+PATCH http://localhost:3000/contacts/10
+Content-Type: application/json
+
+{
+  "first_name": "Robert"
+}
+
+### contacts delete
+DELETE http://localhost:3000/contacts/9

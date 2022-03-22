@@ -1,5 +1,6 @@
 ### contacts index
 GET http://localhost:3000/contacts
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwMDI0OTF9.WR3ebc_M2pFmEjweNX0Fq-UQKpMnpym75XwPPExiTJY
 
 ### contacts create
 POST http://localhost:3000/contacts
@@ -25,3 +26,23 @@ Content-Type: application/json
 
 ### contacts delete
 DELETE http://localhost:3000/contacts/9
+
+### Users create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Test name2",
+  "email": "test2@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}

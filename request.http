@@ -14,7 +14,7 @@ Content-Type: application/json
 }
 
 ### contacts show
-GET http://localhost:3000/contacts/10
+GET http://localhost:3000/contacts/1
 
 ### contacts update
 PATCH http://localhost:3000/contacts/10

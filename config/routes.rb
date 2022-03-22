@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   delete "contacts/:id" => "contacts#destroy"
   # users
   post "/users" => "users#create"
+  get "/users/:id" => "users#show"
   # sessions
   post "/sessions" => "sessions#create"
 end

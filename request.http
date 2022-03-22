@@ -38,6 +38,9 @@ Content-Type: application/json
   "password_confirmation": "password"
 }
 
+### Users show
+GET http://localhost:3000/users/1
+
 ### Sessions create (login)
 POST http://localhost:3000/sessions
 Content-Type: application/json
